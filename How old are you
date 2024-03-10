@@ -1,0 +1,11 @@
+age = int(input("What is your age"))
+
+if age >= 18:
+    print("Come in, have a schooonaa!")
+elif age >= 16:
+    print("You can come in but no beers!")
+elif age >= 0:
+    print("You must be accompanied by an adult")
+else:
+    print("You can't be below 0 years of age!")
+    

@@ -1,0 +1,15 @@
+name = "Man U"
+
+if name == "Man U":
+    print("Old Trafford is falling down, du dudu du du du du, Ten Hag is a ####### clown, du dudu du du du du, Glazers staying ten more years, du dudu du du du du, Jurgen Klopp is on the bears, du dudu du du du du")   
+else:
+    print("Liverpool on top of the league") 
+    
+"Man U"
+
+"Man U"
+
+"Man U"
+
+
+      
