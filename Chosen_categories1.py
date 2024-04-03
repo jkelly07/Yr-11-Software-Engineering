@@ -45,24 +45,17 @@ example_eight = {
 
 multiple_dictionaries = [example_one, example_two, example_three, example_four, example_five, example_six, example_seven, example_eight]
 
-game_categories = []
 
-for entry in range(0,4):
-# im going to create a list, for each entry in that list, do the following (range decides length of list)
-    random_index = random.randint(0,len(multiple_dictionaries)-1)
+def chosen_categories():
+    game_categories = []
 
-    game_categories.append(multiple_dictionaries[random_index])
-# adding(append) something random from multiple dictionaries to game categories
-# or cos laim cahnged what he said twice "getting a random index(position in a list from 0) and correlating it with a example_ from multiple dictionaries, and adding it to game categories"
+    for entry in range(0,4):
+        random_index = random.randint(0,len(multiple_dictionaries)-1)
+        game_categories.append(multiple_dictionaries[random_index])
+        multiple_dictionaries.remove(multiple_dictionaries[random_index])
     
-    multiple_dictionaries.remove(multiple_dictionaries[random_index])
-# removes the chose random index (that correlates to a category) from multiple dictionaries when choosing next index
+    return game_categories
+    # for example in game_categories:
+    #     print(example["Words"])
 
-    
-for example in game_categories:
-    print(example["Words"])
 
-# for every entry in game_categories, it will look at the examples from game categories and get the words varaiable and print it (the words)
-
-# chosen_categories = (example["Words"])
-# print(chosen_categories)

@@ -28,7 +28,7 @@ def display_game_state(populated_grid, guessed_categories, lives):
     # also underneath, show how many lives are left
     pass
 
-def play_game(chosen_cateogies, populated_grid):
+def play_game(chosen_categories, populated_grid):
     lives = 4
     check_win = False
     guessed_categories = []
@@ -40,7 +40,7 @@ def play_game(chosen_cateogies, populated_grid):
 
 
 
-def generate_grid(chosen_cateogies):
+def generate_grid(chosen_categories):
     empty_grid = [["1","2","3","4",],
                 ["5","6","7","8",],
                 ["9","10","11","12",],
@@ -58,7 +58,7 @@ def generate_grid(chosen_cateogies):
     # loop through the dictionaries and put the words into the grid
     x = 0
     y = 0
-    for category in chosen_cateogies:
+    for category in chosen_categories:
         y = 0
         for word in category["words"]:
             empty_grid[x][y] = word
