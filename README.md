@@ -1,6 +1,6 @@
 
 https://app.gemoo.com/share/image-annotation/634347247699156992?codeId=vzRmlQnErYGX9&origin=imageurlgenerator&card=634347245778165760
-
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-ai-image%2Fbrick-wall-with-colors-rainbow_45989053.htm&psig=AOvVaw1KYE0GFKfh5d1XuSKHvXem&ust=1712286908634000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPi3mvzLp4UDFQAAAAAdAAAAABAE
 # Connections Py JK
 
 Connections Py JK is a simple implementation of the New York Times game Connections in Python. The game was created by Jaden Kelly as part of his Year 11 Software Engineering first Assessment Task.
