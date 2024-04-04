@@ -71,7 +71,7 @@ def flat_list(game_categories):
     return(flat_list)
 
 def take_flat_list_and_put_into_2d_array(flat_list):
-    game_grid = []
+    game_grid= []
     game_grid.append(flat_list[0:4])
     game_grid.append(flat_list[4:8])
     game_grid.append(flat_list[8:12])
@@ -112,28 +112,38 @@ def check_guess(guess, game_categories):
     return correct, category_guessed
         
 
+def float_correct_words_to_top(, guess):
+    game_grid.remove(guess[0])
+    game_grid.remove(guess[1])
+    game_grid.remove(guess[2])
+    game_grid.remove(guess[3])
+
+
+
+
 # main - setup for the game 
 game_categories = chosen_categories()
 flat_list = flat_list(game_categories)
 game_grid = take_flat_list_and_put_into_2d_array(flat_list)
 
+
 lives = 4
 categories_guessed = 0
-play_game = True
-while lives >0 and categories_guessed <4 and play_game == True:
+
+while lives >0 and categories_guessed <4:
     print_grid(game_grid)
     guess = get_guess()
     correct, category_guessed = check_guess(guess, game_categories)
     if correct == True:
         categories_guessed += 1
+        float_correct_words_to_top(flat_list, guess)
         print("You guessed the category: ",category_guessed)
         print("You have successfully guessed ", categories_guessed, " categories")
     else:
         lives = lives - 1
-        # print something here
+        print("Wrong guess loser")
 
 if lives == 0:
     print("You Lose, you suck")
 else:
     print("You win")
-
